@@ -1,20 +1,17 @@
 count = 0
 
-my_input = raw_input("Enter something, yo!")
-print my_input
+user_input = raw_input("How high do we count?")
+print user_input
 
-while count in range(0,101):
+
+for count in range(0,int(user_input) + 1):
     if count % 5 == 0 and count % 3 == 0:
         print ("FizzBuzz")
-        count = count + 1
     elif count % 3 == 0:
         print ("Fizz")
-        count = count + 1
     elif count % 5 == 0:
         print("Buzz")
-        count = count + 1
     else:
         print(count)
-        count = count + 1
         
    
